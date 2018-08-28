@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+       <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     {% block script %}
+    <script type="text/javascript" src="{% static 'mine/js/longin.js' %}"></script>
+    {% endblock script %}
+  </head>
+
+<body>
+ <p align="center" style="font-size: 1.4em">登陆</p>
+<br><br><br>
+ <form action="/login/" method="post">
+     {% csrf_token %}
+
+{# ----------------手机号-------------------------#}
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">图标</span>
+      <input type="text"  name="phone" value="" class="form-control" placeholder="请输入手机号" aria-describedby="basic-addon1">
+    </div>
+    <br><br>
+
+{# ----------------密码-------------------------#}
+    <div class="input-group">
+      <input type="password"  name="password" value="" class="form-control" placeholder="输入您的密码:" aria-describedby="basic-addon2">
+      <span class="input-group-addon" >xxx</span>
+    </div> <br><br><br><br>
+
+   {# ----------------登录按钮-------------------------#}
+    <button type="submit"  class="btn btn-primary btn-lg btn-block">登录</button>  <br>
+
+     <p align="center"><a href="/register/">还没有账号？点击注册</a></p>
+</form>
+</body>
+</html>

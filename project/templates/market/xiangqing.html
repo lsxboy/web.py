@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>商品详情</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/swiper.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'market/css/details.css' %}">
+
+{#        引入js、css文件，必须安扎以下顺序引入#}
+    <script type="text/javascript" src="{% static 'base/js/jquery-3.1.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/base.js' %}"></script>
+    <script type="text/javascript" src="{% static 'market/js/xiangqing.js' %}"></script>
+</head>
+
+<body>
+    <div id="details-top">
+        <span id="lt"> <a href="/market/103606/0/0/"><span class=" glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></span>
+        <span id="detailsname"><b id="name">{{ pid_obj.name }}</b></span>
+    </div>
+
+    <div id="details-main"><img src="{{ pid_obj.img }}">
+        <div id="details-name">{{ pid_obj.longName }}</div>
+       <div id="details-price"><b>￥{{ pid_obj.price }}</b></div>
+    </div>
+    <div id="details-detail">
+        <h6>商品详情</h6>
+{#        <ul>#}
+{#            <li>品牌： <span>{{ pid_obj.brandName }}</span></li>#}
+{#            <li>产品规格： <span>{{pid_obj.specifics }}</span></li>#}
+{#            <li>保质期单位： <span>{{pid_obj.safeUnitDesc }}</span></li>#}
+{#        </ul>#}
+    </div>
+    <hr/>
+    <hr/>
+    <hr/>
+    <footer>
+
+        <div id="add">
+            <p id="text">AddCart:</p>
+        <li>
+             <section>
+                            <button  pid="{{ item.productId }}" gid="{{ item.categoryId }}" ppid="{{ item.id }}"  class="subBtn" flag ='0'>-</button>
+
+                                    <span id="{{ item.productId }}">0</span>
+
+                            <button pid='{{ item.productId }}'  gid="{{ item.categoryId }}" ppid="{{ item.id }}" class="addBtn" flag ='1'>+</button>
+             </section>
+        </li>
+        </div>
+    </footer>
+</body>
+</html>

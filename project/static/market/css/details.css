@@ -1,0 +1,96 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+#details-top{
+    overflow: auto;
+    text-align: center;
+    height: 1.8rem;
+}
+
+/*#details-top span{*/
+    /*text-align: center;*/
+    /*position: fixed;*/
+    /*!*top: 0.5rem;*!*/
+
+/*}*/
+
+#lt{
+    float: left;
+    font-size: large;
+}
+#detailsname{
+
+}
+#details-main img{
+    width: 100%;
+    height: 100%;
+}
+#details-name{
+    text-align: center;
+    font-size: larger;
+}
+#details-price{
+    text-align: center;
+    font-size: larger;
+    color: chocolate;
+}
+
+#details-detail h6{
+    line-height: 40px;
+    text-align: center;
+}
+#details-detail ul{
+    float: left;
+    overflow: hidden;
+}
+
+#details-end{
+    width: 100%;
+    height: 100%;
+
+}
+#details-end h6{
+    font-size: x-large;
+    line-height: 50px;
+    text-align: center;
+}
+#favor{
+    float: left;
+}
+
+li > section {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  height: 0.75rem;
+  border-radius: 1rem; }
+section > button {
+  background: white;
+  border: 1px solid orange;
+  border-radius: 1111px;
+  color: red;
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  width: 0.8rem;
+  height: 0.8rem; }
+li > section > span {
+  display: inline-block;
+  width: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem; }
+.subShopping {
+  font-size: 0.8rem;
+  font-weight: 100; }
+
+#text{
+  position: absolute;
+  top: 10px;
+  left: 3px;
+    font-size: 0.7rem;
+}
+
+#name{
+    font-size: 0.65rem;
+}

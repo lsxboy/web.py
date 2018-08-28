@@ -1,0 +1,35 @@
+{% load static from staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地址管理</title>
+    {% block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'mine/css/dizhi.css' %}" />
+{% endblock link%}
+{% block script %}
+<script type="text/javascript" charset="utf-8" src="{% static 'mine/js/dizhi.js' %}"></script>
+{% endblock script %}
+
+</head>
+<body>
+
+{% for res in addresses %}
+    <div>
+        <div id="but">
+            <a href="/mine/"><input type="button" value="返回" ></a>
+            <a href="/update/"><input type="button" value="编辑当前地址"></a>
+            <a href="/add/"><input type="button" value="添加新地址"></a>
+        </div>
+        <ul>
+            <li>收货人姓名：{{ res.name }}</li>
+            <li>手机号：{{ res.phoneNum }}</li>
+            <li>收货地址：{{ res.province }}&nbsp;{{ res.city }}&nbsp;</li>
+             <li>手机号：{{ res.phoneNum }}</li>
+        </ul>
+    </div>
+{% endfor %}
+
+<a href="/add/" style="text-decoration:none;"><h3>添加收货地址</h3></a>
+</body>
+</html>
