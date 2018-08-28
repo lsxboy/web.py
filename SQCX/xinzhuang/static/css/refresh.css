@@ -1,0 +1,15 @@
+#refresh_data{width: 300px;
+    height: 160px;
+    line-height: 160px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3%;
+    background: #042675;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;}

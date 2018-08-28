@@ -1,0 +1,56 @@
+/* 住建 house_construction_index 页面样式 */
+.house_construction_index{
+    width: 100%;
+    overflow: hidden;
+}
+.house_construction_index_box{
+    padding: 1% 5%;
+}
+.house_construction_index_box h5{
+    position: relative;
+    left: 88%;
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    background: #15adea;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px 0 0 10px;
+}
+.house_construction_index_content{
+    width: 100%;
+    overflow: hidden;
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+}
+.house_construction_index_content .house_construction{
+    width: 100%;
+    border-right: 1px solid #e4e0e0;
+}
+.house_construction h4{
+    width: 100px;
+    height: 20px;
+    background: #15adea;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* .house_construction ul{
+    border-right: 1px solid #e4e0e0;
+} */
+.house_construction .continer_li{
+    width: 100%;
+    border-bottom: 1px solid #e4e0e0;
+    padding: 10px;
+}
+.continer_li a{
+    display: block;
+    /* width: 100%;
+    height: 25px;
+    line-height: 25px; */
+    padding-left: 3px;
+    color: #333;
+    font-size: 16px;
+}

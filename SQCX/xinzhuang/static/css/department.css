@@ -1,0 +1,89 @@
+/* department页面样式 */
+
+.depart_box{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.depart_box::-webkit-scrollbar {
+  display: none
+ /* 隐藏滚动条，但依旧具备可以滚动的功能 */
+}
+.flex{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+@media screen and (max-width: 768px){
+    .flex{
+        padding: 5%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1080px){
+    .flex{
+        padding: 7%;
+    }
+}
+@media (min-width: 1080px) and (max-width: 1366px){
+    .flex{
+        padding: 10%;
+    }
+}
+@media screen and (min-width: 1366px){
+    .flex{
+        padding: 5% 15% 5%;
+    }
+}
+.depart_box .flex_item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.icon{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 9px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+}
+.icon1{
+    background: url('../images/1.png') no-repeat center/cover;
+}
+.icon2{
+    background: url('../images/2.png') no-repeat center/cover;
+}
+.icon3{
+    background: url('../images/3.png') no-repeat center/cover;
+}
+.icon4{
+    background: url('../images/4.png') no-repeat center/cover;
+}
+.icon5{
+    background: url('../images/5.png') no-repeat center/cover;
+}
+.icon6{
+    background: url('../images/6.png') no-repeat center/cover;
+}
+.icon7{
+    background: url('../images/7.png') no-repeat center/cover;
+}
+.icon8{
+    background: url('../images/8.png') no-repeat center/cover;
+}
+.icon9{
+    background: url('../images/9.png') no-repeat center/cover;
+}
+.icon10{
+    background: url('../images/10.png') no-repeat center/cover;
+}
+.icon11{
+    background: url('../images/11.png') no-repeat center/cover;
+}
+.flex_item span{
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: black;
+}

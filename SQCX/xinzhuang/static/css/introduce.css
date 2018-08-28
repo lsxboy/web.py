@@ -1,0 +1,106 @@
+/* 大厅简介 */
+.intro_box{
+    width: 100%;
+}
+.intro_content{
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.intro_content::-webkit-scrollbar{
+    display: none
+    /* 隐藏滚动条，但依旧具备可以滚动的功能 */
+}
+.intro_top img{
+    width: 100%;
+    height: 100%;
+    display: block
+}
+@media (min-width: 600px) and (max-width: 768px){   
+    .intro_content{
+        padding: 0 100px;
+    }
+    .bq{
+        position: relative;
+        left: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1080px){
+    .intro_content{
+        padding: 0 150px;
+    }
+    .bq{
+        position: relative;
+        left: 50px;
+    }
+}
+@media (min-width: 1080px) and (max-width: 1366px){
+    .intro_content{
+        padding: 0 200px;
+    }
+    .bq{
+        position: relative;
+        left: 100px;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1920px){
+    .intro_content{
+        padding: 0 300px;
+    }
+    .bq{
+        position: relative;
+        left: 180px;
+    }
+}
+.traffic{
+    margin-bottom: 30px;
+}
+.all_tit{
+    width: 100%;
+    background: #15adea;
+    height: 36px;
+    line-height: 36px;
+}
+.all_tit h2{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 25px;
+}
+.intro_font{
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #333;
+    line-height: 29px;
+}
+.intro_jianjie p{
+    padding: 24px 0 30px 30px;
+}
+.traffic_zt{
+    padding: 14px 0 20px 30px;
+}
+.traffic_img img{
+    width: 100%;
+    height: 100%;
+}
+.work_time{
+    margin-bottom: 128px;
+}
+.time{
+    padding: 15px 0 0 30px;
+}
+.js,.tel{
+    font-family: "微软雅黑";
+    color:rgba(51,51,51);
+    font-size: 16px;
+}
+.js{
+    margin-bottom: 10px;
+}
+.bq{
+    font-size: 14px;
+}
+.bottom_font{
+    color:rgba(0,63,134);
+}

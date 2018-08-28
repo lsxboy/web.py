@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user</title>
+    <link rel="stylesheet" href="../style/css/main_css.css">
+    <link rel="stylesheet" href="../style/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../style/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../style/css/style.css" />
+    <link rel="stylesheet" href="../style/css/common_style.css">
+    <link rel="stylesheet" href="../style/icon/iconfont.css">
+    <link rel="stylesheet" href="../style/css/category/add_big.css">
+
+    <script src="../style/js/jquery-1.7.1.js"></script>
+    <script src="../style/js/jquery.cookie.js"></script>
+    <script src="../style/js/msgbox.js"></script>
+    <script src="../style/js/tips.js"></script>
+    <script src="../style/js/comment.js"></script>
+    <script src="../style/js/all.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body onload="getDate01()">
+    <div id="all">
+        <div id="top">
+            <div id="top_logo">
+                <img alt="logo" src="../style/images/common/logo.jpg" width="274" height="49" style="vertical-align:middle;">
+            </div>
+            <div id="organization_hall" style="vertical-align: bottom;">
+                     机构id：
+                    <span id="jg_id"></span>
+                    
+                
+            </div>
+            <div id="top_links">
+                <div id="top_op">
+                    <ul>
+                        <li>
+                            <img alt="当前用户" src="../style/images/common/user.jpg">：
+                            <span id="modify1" onclick="modify_page($('#modify1').val())"></span>
+                        </li>
+                        <li>
+                            <img alt="今天是" src="../style/images/common/date.jpg">：
+                            <span id="today_day"></span>
+                        </li>
+                    </ul>
+                    <div id="top_close" onClick="logout()">
+                        <a href="javascript:void(0);" target="_parent">
+                            <img alt="退出系统" title="退出系统" src="../style/images/common/close.jpg" style="position: relative;  left: 25px;"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+
+            <ul id="parentNode">
+                <!--机构配置下拉框-->
+                <li class="nav-item">
+                    <a href="javascript:;">
+                        <span class="fst-spn">机构配置</span>
+                        <i class="nav-more iconfont icon-xiangyou1"></i>
+                    </a>
+                    <ul class="nav-ul org_ul">
+                        
+                    </ul>
+
+                </li>
+
+                <li class="add_big" style="border-bottom: 1px solid #989696">
+                    <a href="javascript:;">
+                        <span class="fst-spn">添加大类</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="category">
+
+            </ul>
+        </div>
+        <div id="right">
+            <div id="main">
+                <div id="rightMain" name="rightMain"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/finish.js"></script>
+    <script src="js/add_big.js"></script>
+    <script src="js/add_small.js"></script>
+    <script src="js/additions.js"></script>
+    <!--<script src="js/detail_addition.js"></script>-->
+     <script src="js/add_org.js"></script>
+    <!-- <script src="js/add_user.js"></script> -->
+</body>
+
+</html>

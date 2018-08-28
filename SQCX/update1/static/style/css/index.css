@@ -1,0 +1,35 @@
+/* index 页面样式 */
+#btn_box{
+    width: 700px;
+    height: 160px;
+    /* background: pink; */
+    /* margin: 0 auto; */
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-80px;
+}
+#btn_box .fl,.fr{
+    width: 300px;
+    height: 160px;
+    line-height: 160px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3%;
+    background: #042675;
+    text-align: center;
+}
+.fl{
+     float: left;
+}
+.fr{
+    float: right;
+}
+.char{
+    font-size: 26px;
+    color: white;
+}
+#btn_box .fl:hover,.fr:hover{
+    border-color: rgb(154, 159, 164);
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 0px 6px 0px;
+}

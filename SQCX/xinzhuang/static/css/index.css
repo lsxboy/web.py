@@ -1,0 +1,106 @@
+﻿/* index 页面样式 */
+.header{
+    text-align: center;
+    padding: 30px;   
+}
+.header>h1{
+    font-size:90px;
+}
+/* #btn_box{
+    width: 700px;
+    height: 160px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-80px;
+} */
+#btn_box .fl,.fr{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3%;
+    background: #042675;
+    text-align: center;
+}
+@media (min-width: 600px) and (max-width: 768px){   
+    .header>h1{
+        font-size:50px;
+    }
+    #btn_box .fl,.fr{
+        width: 200px;
+        height: 150px;
+        line-height: 150px;
+    }
+    #btn_box{
+        padding: 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1080px){
+    .header>h1{
+        font-size:70px;
+    }
+    #btn_box .fl,.fr{
+        width: 300px;
+        height: 250px;
+        line-height: 250px;
+    }
+    #btn_box{
+        padding: 10px;
+    }
+    .char{
+        font-size: 50px;
+        color: white;
+    } 
+}
+@media (min-width: 1080px) and (max-width: 1366px){
+    #btn_box .fl,.fr{
+        width: 500px;
+        height: 300px;
+        line-height: 300px;
+    }
+    #btn_box{
+        padding: 20px;
+    }
+    .char{
+        font-size: 70px;
+        color: white;
+    }   
+}
+@media (min-width: 1366px) and (max-width: 1920px){
+    #btn_box .fl,.fr{
+        width: 600px;
+        height: 350px;
+        line-height: 350px;
+    }
+    #btn_box{
+        padding: 50px;
+    }
+    .char{
+        font-size: 70px;
+        color: white;
+    }   
+}
+@media (min-width: 1920px) {
+    #btn_box .fl,.fr{
+        width: 700px;
+        height: 450px;
+        line-height: 450px;
+    }
+    #btn_box{
+        padding: 120px 160px;
+    }
+    .char{
+        font-size: 75px;
+        color: white;
+    }   
+}
+.fl{
+     float: left;
+}
+.fr{
+    float: right;
+}
+
+#btn_box .fl:hover,.fr:hover{
+    border-color: rgb(154, 159, 164);
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 0px 6px 0px;
+}

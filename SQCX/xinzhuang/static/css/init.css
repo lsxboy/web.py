@@ -1,0 +1,68 @@
+/*初始化样式开始*/ 
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px "微软雅黑",tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight: normal; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img ,button,input{ border:0; outline:none;} 
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+*{
+    box-sizing: border-box;
+}
+/*清除浮动*/
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
+/*初始化样式结束*/
+
+
+/* 上一页按钮样式 */
+/* .depart_back{
+    padding-left: 5%;
+    padding-top: 2%;
+} */
+/* .back{
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    color: #a79c9c;
+    font-size: 16px;
+    font-family: "微软雅黑";
+} */
+.back{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    /* left: 110px; */
+}
+.back i{
+    font-size: 62px;
+}
+.up_down{
+    position: fixed;
+    top:0px;
+    /* right: 110px; */
+    right: 0px;
+}
+.up_down a{
+    display: block;
+}
+.up_down i{
+    font-size: 75px;
+}

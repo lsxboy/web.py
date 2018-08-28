@@ -1,0 +1,44 @@
+<div class="result-wrap">
+    <div class="config-items">
+        <div class="config-title">
+            <h1>
+                <i class="iconfont icon-shengqian"></i>用户配置</h1>
+        </div>
+        <div class="result-content">
+            <table width="100%" class="insert-tab">
+                <tbody>
+                    <tr>
+                        <th width="15%">
+                            <i class="require-red">*</i>用户名：</th>
+                        <td>
+                            <input type="text" id="sys_user_name" value="" size="97" name="sys_user_name" class="common-text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="require-red">*</i>密码：</th>
+                        <td>
+                            <input type="password" id="sys_user_password" value="" size="97" name="sys_user_password" class="common-text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="15%">
+                            <i class="require-red">*</i>管理机构</th>
+                        <td>
+                            <form id="bind_org" name="bind_org">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" value="添加" id="add_save_user" class="btn btn-primary btn55 mr8" onclick="addSaveUser()">
+                            <input type="button" value="重置" id="reset_user" onclick="reset_user()" class="btn btn55 mr8">
+                            <input type="button" value="示例" id="user_example" onclick="user_example()" class="btn btn55 mr8">
+                            <input type="button" value="删除" id="remove_window" onclick="remove_user()" class="btn btn55 btnr">
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>

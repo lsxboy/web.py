@@ -1,0 +1,106 @@
+<div class="result-wrap">
+    <div class="config-items">
+        <div class="config-title">
+            <h1>
+                <i class="iconfont icon-shengqian"></i>添加事项</h1>
+        </div>
+        <div class="result-content">
+            <div style="padding-left: 72px;">
+                <div class="addition">
+                    <div class="print_con">
+                        <style type="text/css">
+                            .new_permit_li {
+                                /* border-bottom: 1px solid #f3ecec; */
+                                font-size: 16px;
+                                font-family: "微软雅黑";
+                                line-height: 30px;
+                                margin-bottom: 20px;
+                            }
+
+                            .new_permit_li h3 {
+                                font-weight: bold;
+                                font-size: 25px;
+                                padding: 16px 0;
+                            }
+
+                            .com_department {
+                                font-size: 16px;
+                                color: #28b6d8;
+                                margin-right: 20px;
+                            }
+
+                            .new_permit_li h5 {
+                                font-size: 16px;
+                                color: #28b6d8;
+                            }
+                            textarea{
+                                margin-left: 90px;
+                                padding: 10px;
+                                line-height: 24px;
+                            }
+                        </style>
+                        <ul class="new_permit">
+                            <li class="new_permit_li one">
+                                <span style="color: #28b6d8;">事项名称&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" style="width: 500px;">
+                                <!-- <h3>居住证新办</h3> -->
+                            </li>
+                            <li class="new_permit_li sx">
+                                <span style="color: #28b6d8;">事项 id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" style="width: 500px;" onkeyup="number_input_check('sx_id')" onblur="number_input_check('sx_id')" id="sx_id">
+                                <!-- <h3>居住证新办</h3> -->
+                            </li>
+                            <li class="new_permit_li two">
+                                <span class="com_department">主管部门</span>
+                                <input type="text" style="width: 500px;">
+                                <!-- <span class="bureau">市公安局</span> -->
+                            </li>
+                            <li class="new_permit_li three">
+                                <h5>办理依据</h5>
+                                <textarea name="" id="" cols="66" rows="10"></textarea>
+                                <!-- <p>《上海市居住证管理办法》（沪府令58号）；</p>
+                                <p>《上海市居住证申办实施细则》（沪府发〔2017〕89号）。</p> -->
+                            </li>
+                            <li class="new_permit_li four">
+                                <h5>申办条件</h5>
+                                <textarea name="" id="" cols="66" rows="10"></textarea>
+                                <!-- <p>1、离开常住户口所在地，在本市办理居住登记满半年；</p>
+                                <p>2、符合有合法稳定就业、合法稳定住所、连续就读条件之一的。</p> -->
+                            </li>
+                            <li class="new_permit_li five">
+                                <h5>申请材料</h5>
+                                <textarea name="" id="" cols="66" rows="10"></textarea>
+                                <!-- <p>1、申请人本人有效居民身份证正、反面复印件或户口簿复印件（验原件）；</p>
+                                <p>2、《上海市居住证申请表》；</p>
+                                <p>3、申请人现居住地址与居住登记地址不一致的，应当提供相应的在沪合法居住证明：居住在本人或近亲属自购住房的，提供相应的房地产权证明复印件（验原件）；居住在本人或近亲属租赁住房的，提供房屋管理部门出具的房屋租赁合同登记备案证明复印件（验原件）；居住在单位、学校集体宿舍的，提供单位、学校人事或者保卫部门出具的集体宿舍证明；</p>
+                                <p>4、居住在近亲属自购或者租赁住房的，还应当提供相应的亲属关系证明。</p> -->
+                            </li>
+                            <li class="new_permit_li six">
+                                <h5>办理程序</h5>
+                                <textarea name="" id="" cols="66" rows="10"></textarea>
+                                <!-- <p>1、申请人本人到居住地街道（乡镇）社区事务受理服务中心提交相关申办材料；</p>
+                                <p>2、居住地街道（乡镇）社区事务受理服务中心指导申请人填写《上海市居住证申请表》并确认签字，核对材料；</p>
+                                <p>3、对材料不齐全的，应当告知申请人需要补齐的内容，并将申请材料退还申请人；</p>
+                                <p>4、对材料齐全的，应当在居住证信息系统中登记信息、拍照，并出具《上海市居住证受理回执》；</p>
+                                <p>5、凭个人有效居民身份证原件和受理回执领取证件。</p> -->
+                            </li>
+                            <li class="new_permit_li seven">
+                                <h5>收费标准</h5>
+                                <textarea name="" id="" cols="66" rows="10"></textarea>
+                                <!-- <p>首次新办免收工本费。</p> -->
+                            </li>
+                            <li class="new_permit_li">温馨提示：为更好地向居民提供社区政务服务，社区事务受理服务中心实行“刷证办事”，请您办理事项时务必带好有效居民身份证原件或社保卡、居住证、医保卡原件，谢谢配合！</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="添加事项" id="add_addition" onclick="add_addition()" class="btn btn-primary btn55 mr8">
+                    <input type="button" value="重置" id="reset_addition" onclick="reset_addition()" class="btn btn55 mr8">
+                    <input type="button" value="示例" id="example_addition" onclick="example_addition()" class="btn btn55 mr8">
+                    <input type="button" value="删除" id="remove_addition" onclick="remove_addition()" class="btn btn55 btnr">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
